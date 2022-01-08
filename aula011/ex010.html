@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <h1> Insira a velocidade:</h1>
+    <input type="number" name="tspeed" id="tspeed">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            limite = 60
+
+            var vel = document.getElementById('tspeed')
+            var nspeed = Number(vel.value)
+            var resultado = document.getElementById('res')
+            
+            if (nspeed > limite) {
+
+                resultado.innerHTML = `A velocidade máxima permitida é <strong>${limite}Km/h</strong>. <p>Você estava dirigindo à <strong>${nspeed}Km/h</strong>, portanto, foi multado</p>`
+
+            }
+                
+
+            else {
+
+                resultado.innerHTML = `A velocidade máxima permitida é <strong>${limite}Km/h</strong>. <p>Você estava à <strong>${nspeed}Km/h</strong>, portanto, poderá prosseguir.</p>`
+            }
+                
+            
+            
+        }
+    </script>
+</body>
+</html>
