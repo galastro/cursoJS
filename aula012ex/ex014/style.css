@@ -1,0 +1,38 @@
+@charset "UTF-8";
+* {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+body {
+    background-color: #0C4267;
+    font: normal 25px arial;
+}
+
+h1#titulop {
+    text-align: center;
+    color: white;
+    
+}
+
+section {
+    
+    background-color: white;
+    border-radius: 5pt;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);
+   
+    
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
