@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <p>Insira seu país (começando com letra maiúscula): </p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var pais = document.getElementById('pais')
+            var b = document.getElementById('res')
+            if (pais.value == 'Brasil') {
+                b.innerHTML = `Se você nasceu no(a) ${pais.value}, você é brasileiro!`
+            } else {
+                b.innerHTML = `Se você nasceu no(a) ${pais.value}, você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
