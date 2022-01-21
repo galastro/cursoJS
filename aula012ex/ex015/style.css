@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+body {
+    background-color: #3E82D4;
+    font: normal 23px arial;
+}
+
+h1#titulop {
+    text-align: center;
+    color: white;
+}
+
+section {
+    
+    background-color: white;
+    border-radius: 5pt;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.404);   
+    
+}
+p#sexus {
+    padding-top: 15px; 
+}
+p#botao {
+    padding-top: 15px;
+}
+div#res {
+    padding-top: 30px;
+    
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
