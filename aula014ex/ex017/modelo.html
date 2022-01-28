@@ -9,11 +9,20 @@
 </head>
 <body>
     <header>
-        <h1 id="titulop">Título</h1>
+        <h1 id="titulop">Tabuada</h1>
     </header>
     <section>
-        <div><p>Div1</p></div>
         <div><p>Div2</p></div>
+        <div>
+            Número: <input type="number" name="numero" id="txtn">
+            <input type="button" value="Gerar tabuada" onclick="calcular()">
+        </div>
+        <div id="res">
+            <select name="tabuada" id="seltab" size="10">
+                <option value="">Digite um número acima:</option>
+            </select>
+            
+        </div>
     </section>
     <footer>
         Leandro Galastro, aluno do CursoemVídeo
